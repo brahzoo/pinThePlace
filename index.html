@@ -98,8 +98,34 @@
     </header>
     <a href=""https://pinthe.place">https://pinthe.place</a>
     <main>
-        <h2></h2>
-        <p>This is a simple, elegant starting point for a personal website, portfolio, or project page. You can easily add sections, images, or links as needed.</p>
-        
-        <h2>Getting Started</h2>
+        <h2>Security</h2>
+        <p>This was a learning process while I was building this app, I continually strived for hardening all components independantly</p>
+        <ul>
+            <li>Multi-Tier Architecture (Frontend, Backened, Database)</li>
+            <li>HTTPS Enforcement with Certificates</li>
+            <li>Cross-Origin Resource Sharing Policy</li>
+            <li>Cross-Site Scripting Prevention</li>
+            <li>Security Headers with Helmet</li>
+            <li>Rate Limiting on all API endpoints</li>
+            <li>reCAPTCHA for Contact Forms or Reporting Forms</li>
+            <li>Authentication & Authorization</li>
+            <ul>
+                <li>Secure JWT in httponly Cookies</li>
+                <li>Role-Based Access Control</li>
+                <li>Google OAuth 2</li>
+                <li>After verifying a JWT, our authentication middleware performs an additional database check</li>
+            </ul>
+            <li>Sanitization</li>
+                <ul>
+                <li>SQL Injection Prevention (all queries are parametized)</li>
+                <li>DOM Purify for anything being rendered</li>
+                    <li>Secure File Uploads</li>
+                    <ul>
+                        <li>whitelisted MIME types for any uploads, file size limits</li>
+                        <li>Image re-processing</li>
+                        <li>SVG whitelisting tags</li>
+                        <li>Unique, Randomized Filenames (random UUID appended)</li>
+                    </ul>
+                </ul>   
+        </ul>
         <p>Replace this text with your own content. Try adding nav
