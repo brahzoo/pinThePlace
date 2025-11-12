@@ -38,6 +38,14 @@
             letter-spacing: 0.5px;
         }
 
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;  /* never exceed parent width */
+            height: auto;     /* maintain aspect ratio */
+            border-radius: 10px; /* optional: match main container */
+        }
+
         /* === Main Content === */
         main {
             flex: 1;
@@ -130,7 +138,7 @@
             <li>Domain: Porkbun</li>
             <li>Domain DNS: Cloudflare</li>
         </uL>
-
+        <br/>
         <h2>Security</h2>
         <p>This was a learning process while I was building this app — I continually strived to harden all components independently.</p>
 
@@ -165,6 +173,7 @@
                 </ul>
             </li>
         </ul>
+        <br/>
          <h2>SEO</h2>
         <p>An ongoing battle for the best Search Engine Optimization.</p>
         <ul>
