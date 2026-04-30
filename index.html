@@ -131,13 +131,13 @@
         <h2>Setup</h2>
         <p>This web app is a full-stack web application with a hybrid Static + SPA architecture, built with TypeScript. I wrote my own batch scripts for Devops deployments (testing + production environments), the scripts are evolving everyday. The deployment scripts build and push with docker, deploy on google, generates prerendered files and uploads them to my Cloudflare buckets. I am using Typescript and React for the frontend. I am using Node JS Express for the backend and a Postgres database provider. I have a test environment where the backend runs locally on my machine. Once I approve the fix on the test environment, then I deploy it to production.</p>
         <uL>
-            <li>Reverse Proxy with Fallback Routing: Cloudflare<li>
+            <li>Frontend: Reverse Proxy with Fallback Routing: Cloudflare<li>
                 <uL>
                     <li>Static Site generation (SSG) prerendered html files</li>
-                    <li>Fallback to Google Clout Typescript/React code</li> 
+                    <li>Fallback to Google Cloud (Typescript + React)</li> 
                 </uL>
-            <li>Frontend: Google Cloud</li>
-            <li>Backend: AWS/Oracle</li>
+            <li>Backend: Oracle (node js express)</li>
+            <li>Websocket Server: Google VM (for multiplayer + escape room game)
             <li>Postgres Database: Neon Tech</li>
             <li>Storage: Cloudflare</li>
             <li>Domain: Porkbun</li>
